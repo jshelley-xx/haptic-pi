@@ -5,6 +5,7 @@ import urllib
 import math
 import json
 import csv
+from gpiozero import LED
 from pprint import pprint
 import time
 
@@ -15,8 +16,7 @@ config={}
 last_loaded={}
 
 
-
-files_i_watch_for = {}
+led = LED(17)
 
 
 
@@ -125,7 +125,9 @@ def figure_future_buzz (player_data):
 
 def buzz (duration):
 	print("buzzing for %s" % (duration / 1000.0))
+	led.on()
 	time.sleep(duration / 1000.0)
+	led.off()
 	
 
 
