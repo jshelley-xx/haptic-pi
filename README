@@ -1,0 +1,18 @@
+To install:
+sudo ./install.sh
+
+
+To uninstall:
+sudo ./uninstall.sh
+
+Relevant links:
+
+The Circuit:
+https://thecustomizewindows.com/2015/08/arduino-3v-dc-motor-control-transistor-ic-more/
+
+Pi Pinout
+https://www.raspberrypi.org/documentation/usage/gpio/README.md
+
+
+Making a systemd service
+https://www.raspberrypi-spy.co.uk/2015/10/how-to-autorun-a-python-script-on-boot-using-systemd/
